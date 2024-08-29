@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Check for win or draw
             if (checkWin()) {
-                setTimeout(() => alert(`${isXTurn ? "X" : "O"} wins!`), 10);
+                setTimeout(() => alert(`${isXTurn ? "O" : "X"} wins!`), 10);
                 endGame();
             } else if (board.every(cell => cell !== null)) {
                 setTimeout(() => alert("It's a draw!"), 10);
